@@ -25,9 +25,17 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  vite: {
+    ssr: {
+      noExternal: ['vuetify'],
+    },
+  },
+
   plugins: ['~/plugins/vuetify.js'],
   build: {
     transpile: ['vuetify'],
   },
 
 })
+
+
