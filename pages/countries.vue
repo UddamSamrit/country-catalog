@@ -1,4 +1,9 @@
 <template>
+    <Head>
+  <Title>List Country Catalog</Title>
+  <Meta name="List Country Catalog " />
+</Head>
+
     <v-app>
         <v-main>
             <div class="px-4 sm:px-6 lg:px-8">
@@ -54,9 +59,6 @@
 
 import { reactive, ref } from 'vue';
 
-definePageMeta({
-  title: 'Countries '
-})
 
 const { data } = await useFetch("https://restcountries.com/v3.1/all");
 const countries = data.value || [];
