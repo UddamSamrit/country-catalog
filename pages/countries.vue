@@ -145,6 +145,14 @@
                         </v-chip>
 
                     </template>
+                    <template v-slot:[`item.idd`]="{ item }">
+                        <span>{{ item.idd.root  }}</span>
+                        <v-chip v-for="suffixe in item.idd.suffixes" :key="spelling" class="ma-2" color="green"
+                            outlined>
+                            {{ suffixe }}
+                        </v-chip>
+
+                    </template>
                 </v-data-table>
 
             </div>
@@ -178,6 +186,7 @@ const headers = reactive([
         sortable: true,
     },
     { text: 'AltSpellings', value: 'altSpellings' },
+    { text: 'Idd', value: 'idd' },
 ]);
 
 
