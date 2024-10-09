@@ -12,7 +12,7 @@
   
   <script setup>
   const stats = [
-    { name: 'Total Subscribers', stat: '71,897' },
+    { name: 'All Country', stat: '250' },
     { name: 'Avg. Open Rate', stat: '58.16%' },
     { name: 'Avg. Click Rate', stat: '24.57%' },
   ]

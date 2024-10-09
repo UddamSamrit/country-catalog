@@ -8,14 +8,18 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'vuetify-nuxt-module',
   ],
-  css: ['~/assets/css/main.css'],
+  css: [
+    'vuetify/lib/styles/main.sass', // Make sure Vuetify's styles are included
+    '@mdi/font/css/materialdesignicons.min.css', // Optionally include Material Icons
+    '~/assets/css/main.css'
+  ],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
-
+  plugins: ['~/plugins/vuetify.js'],
   build: {
     transpile: ['vuetify'],
   },
