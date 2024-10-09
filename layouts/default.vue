@@ -173,6 +173,15 @@
 
 <script setup>
 
+useSeoMeta({
+  title: 'Country Catalog',
+  ogTitle: 'Pop Country',
+  description: 'find all country',
+  ogDescription: 'country in the word',
+  ogImage: 'https://scontent.fpnh2-2.fna.fbcdn.net/v/t39.30808-1/459421160_840394734828720_8771172204417612160_n.jpg?stp=cp6_dst-jpg_s480x480&_nc_cat=107&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeFVsOtPs84wyormRUk_tBc3U0EmWlWflg9TQSZaVZ-WD3lScH2QKEKu10jiwVj5Wn7BmdjLxkj387teX1xFO-I_&_nc_ohc=f0t9V3_5wvcQ7kNvgHDcu5Y&_nc_ht=scontent.fpnh2-2.fna&_nc_gid=AJ_-Xx4MCqNHN2GA5goQorj&oh=00_AYBqeqLWn-eGe-214yxbSaNSH658Avqsnp9F9d5b-YCUTA&oe=670B9450',
+  twitterCard: 'summary_large_image',
+})
+
 import { ref } from 'vue'
 import {
   Dialog,

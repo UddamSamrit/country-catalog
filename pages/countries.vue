@@ -169,6 +169,11 @@
 <script setup>
 
 import { reactive, ref } from 'vue';
+
+definePageMeta({
+  title: 'Countries '
+})
+
 const { data } = await useFetch("https://restcountries.com/v3.1/all");
 const countries = data.value || [];
 const search = ref();

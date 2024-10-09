@@ -11,6 +11,10 @@
   </template>
   
   <script setup>
+  definePageMeta({
+  title: 'Dashboard'
+})
+
   const stats = [
     { name: 'All Country', stat: '250' },
 
