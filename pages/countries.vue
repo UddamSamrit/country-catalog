@@ -24,9 +24,8 @@
             </template>
 
             <template v-slot:item.idd="{ item }">
-                <span>{{ item.idd.root }}</span>
                 <v-chip v-for="suffixe in item.idd.suffixes" :key="suffixe" class="ma-2" color="green" outlined>
-                    {{ suffixe }}
+                    {{ item.idd.root + suffixe }}
                 </v-chip>
             </template>
         </v-data-table>
